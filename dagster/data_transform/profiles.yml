@@ -1,0 +1,13 @@
+data_transform:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      schema: default 
+      host: clickhouse
+      port: 8123
+      user: default  
+      password: ''
+      secure: false  
+      verify: false  
+      threads: 4 

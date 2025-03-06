@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: staging
+    schema: default  
+    database: default 
+    tables:
+      - name: STG_Report
+      - name: STG_ScheduleA
+      - name: STG_ScheduleB
+      - name: STG_ScheduleC
+      - name: STG_ScheduleD
+      - name: STG_ScheduleE
+      - name: STG_ScheduleF
+      - name: STG_ScheduleG
+      - name: STG_ScheduleH
+      - name: STG_ScheduleI

@@ -1,0 +1,12 @@
+dagster 
+dagster-webserver 
+clickhouse-driver
+dbt-core
+dbt-clickhouse
+dagster
+dagster-webserver
+dagster-dbt
+clickhouse_connect
+pandas
+requests
+beautifulsoup4

@@ -1,0 +1,22 @@
+services:
+  clickhouse:
+    image: 'clickhouse/clickhouse-server:${CHVER:-latest}'
+    user: '101:101'
+    container_name: clickhouse
+    hostname: clickhouse
+    volumes:
+      - ./fs/volumes/clickhouse/etc/clickhouse-server/config.d/config.xml:/etc/clickhouse-server/config.d/config.xml
+      - ./fs/volumes/clickhouse/etc/clickhouse-server/users.d/users.xml:/etc/clickhouse-server/users.d/users.xml
+    ports:
+      - '127.0.0.1:18123:8123'
+      - '127.0.0.1:19000:9000'
+
+  dagster_webserver:
+    build:
+      context: .
+      dockerfile: ./dagster/Dockerfile
+    container_name: dagster_webserver
+    ports:
+      - 3000:3000
+    volumes: 
+      - ./dagster/data_pipeline:/opt/dagster/dagster_home/data_pipeline
