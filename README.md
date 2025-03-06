@@ -13,6 +13,7 @@ This project uses **Docker Compose** to spin up a local environment with all nec
 ---
 
 ## 📂 Project Structure
+```bash
 dagster-dbt-clickhouse-example/
 │── dags/                     # Dagster pipeline definitions
 │── dbt_project/               # dbt models and transformations
@@ -20,7 +21,7 @@ dagster-dbt-clickhouse-example/
 │── docker-compose.yaml        # Docker Compose configuration
 │── requirements.txt           # Python dependencies
 └── README.md                  # Documentation
-
+```
 ---
 
 ## 🛠️ Setup and Installation
